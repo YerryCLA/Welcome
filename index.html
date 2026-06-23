@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome | yerry262</title>
-    
+    <meta name="description" content="Exploring the digital frontier - portfolio and live projects of yerry262.">
+
     <!-- Favicon and App Icons -->
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="./assets/favicon.svg">
     <link rel="manifest" href="./assets/site.webmanifest">
     <meta name="theme-color" content="#0a0a0f">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Welcome | yerry262">
-    <meta property="og:description" content="Exploring the digital frontier - Portfolio of yerry262">
+    <meta property="og:description" content="Exploring the digital frontier - portfolio and live projects of yerry262.">
     <meta property="og:url" content="https://yerry262.github.io/Welcome/">
-    <meta name="twitter:card" content="summary_large_image">
-    
+    <meta property="og:image" content="https://yerry262.github.io/Welcome/assets/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Welcome | yerry262">
+    <meta name="twitter:description" content="Exploring the digital frontier - portfolio and live projects of yerry262.">
+    <meta name="twitter:image" content="https://yerry262.github.io/Welcome/assets/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,10 +30,10 @@
     <link rel="stylesheet" crossorigin href="./assets/index-2hZnjce4.css">
   </head>
   <body>
-    <canvas id="particles"></canvas>
+    <canvas id="particles" aria-hidden="true"></canvas>
 
-    <div class="scanlines"></div>
-    <div class="vignette"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
 
     <main class="container">
       <div class="glitch-wrapper">
@@ -54,31 +57,31 @@
       <p class="subtitle">Explore My Live Projects Below!</p>
 
       <div class="big-links">
-        <a href="https://yerry262.github.io/Personal_Website/" class="big-link" target="_blank">
-          <div class="big-link-icon">👤</div>
+        <a href="https://yerry262.github.io/Personal_Website/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">👤</div>
           <div class="big-link-label">About Me</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/Spotify-Webapp-Visualizer/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/Spotify-Webapp-Visualizer/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32" fill="#1DB954">
               <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
             </svg>
           </div>
           <div class="big-link-label">Spotify Visualizer</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/Tesla-Dashboard/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/Tesla-Dashboard/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32" fill="#E82127">
               <path d="M12 5.362l2.475-3.026s4.245.09 8.471 2.054c-1.082 1.636-3.231 2.438-3.231 2.438-.146-1.439-1.154-1.79-4.354-1.79L12 24 8.619 5.034c-3.18 0-4.188.354-4.335 1.792 0 0-2.148-.795-3.229-2.43C5.28 2.431 9.525 2.34 9.525 2.34L12 5.362zm0-3.676c3.165 0 4.673.237 7.467 1.158.66-.412 2.094-.995 3.166-1.335C19.885.252 14.552 0 12 0S4.119.247 1.371 1.506c1.072.34 2.506.93 3.166 1.342C7.327 1.927 8.835 1.69 12 1.69v-.004z"/>
             </svg>
           </div>
           <div class="big-link-label">Tesla Dashboard</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/BrickBreaker2500/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/BrickBreaker2500/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
               <rect x="1" y="2" width="6" height="3" rx="0.5" fill="#FF6B6B"/>
               <rect x="9" y="2" width="6" height="3" rx="0.5" fill="#4ECDC4"/>
@@ -91,10 +94,10 @@
             </svg>
           </div>
           <div class="big-link-label">Brick Breaker 2500</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/Connect4/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/Connect4/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32">
               <rect x="1" y="4" width="22" height="18" rx="2" fill="#1a5fb4"/>
               <circle cx="6" cy="9" r="2.5" fill="#FFD700"/>
@@ -106,10 +109,10 @@
             </svg>
           </div>
           <div class="big-link-label">Connect4</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/HomeRunDerby/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/HomeRunDerby/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32">
               <circle cx="12" cy="12" r="10" fill="#FFFFFF" stroke="#CC0000" stroke-width="1"/>
               <path d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22" stroke="#CC0000" stroke-width="1" fill="none"/>
@@ -119,10 +122,10 @@
             </svg>
           </div>
           <div class="big-link-label">Home Run Derby</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/RealEstate/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/RealEstate/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32">
               <path d="M12 2L2 9V22H9V15H15V22H22V9L12 2Z" fill="#4A90D9"/>
               <rect x="10" y="10" width="4" height="4" fill="#FFD700"/>
@@ -130,10 +133,10 @@
             </svg>
           </div>
           <div class="big-link-label">Real Estate</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://yerry262.github.io/ChainChat/" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://yerry262.github.io/ChainChat/" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32">
               <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="#3B82F6"/>
               <circle cx="8" cy="10" r="1.5" fill="white"/>
@@ -142,16 +145,16 @@
             </svg>
           </div>
           <div class="big-link-label">ChainChat</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
-        <a href="https://github.com/yerry262" class="big-link" target="_blank">
-          <div class="big-link-icon">
+        <a href="https://github.com/yerry262" class="big-link" target="_blank" rel="noopener noreferrer">
+          <div class="big-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>
           </div>
           <div class="big-link-label">GitHub</div>
-          <div class="big-link-arrow">→</div>
+          <div class="big-link-arrow" aria-hidden="true">→</div>
         </a>
       </div>
 
